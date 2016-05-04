@@ -24,6 +24,12 @@
   right: 20px;
 }
 
+.-bottom-right {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+
 @media (max-width: 479px) {
   .mdl-cell--1-col, .mdl-cell--1-col-phone.mdl-cell--1-col-phone {
     width: calc(33.33% - 16px);

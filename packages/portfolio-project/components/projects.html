@@ -1,0 +1,15 @@
+<template name="portfolioProjects">
+  {{> portfolioImageBanner}}
+  <div class="page-container">
+    {{#each projects}}
+      {{> portfolioProjectItem data=this}}
+    {{/each}}
+    {{#with currentUser}}
+      {{#if isAdmin}}
+      <button class="-bottom-right open-overlay mdl-button mdl-js-button mdl-button--fab">
+        <i class="material-icons">add</i>
+      </button>
+      {{/if}}
+    {{/with}}
+  </div>
+</template>

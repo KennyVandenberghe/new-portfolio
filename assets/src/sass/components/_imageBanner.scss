@@ -1,0 +1,12 @@
+.image-banner-wrapper {
+  width: 100%;
+  height: 300px;
+  background-position: 20% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('/images/desk.jpg');
+  opacity: 0.6;
+  @media(max-width: 676px) {
+    height: 150px;
+  }
+}

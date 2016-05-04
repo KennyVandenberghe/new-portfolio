@@ -18,7 +18,5 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 
 accounts-password
-project-app
-insecure
-autopublish
+portfolio-app
 zodiase:mdl@1.1.0

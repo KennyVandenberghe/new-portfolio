@@ -1,0 +1,14 @@
+<template name="portfolioNavigation">
+  <div class="navigation-wrapper">
+		<div class="navigation-title">
+			{{title}}
+		</div>
+		<div class="navigation-tabs">
+      {{#each navItems}}
+  			<a href="{{slug}}" class="navigation-item">
+  				{{title}}
+  			</a>
+      {{/each}}
+	  </div>
+	</div>
+</template>

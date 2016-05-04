@@ -1,0 +1,41 @@
+$navigation-wrapper_height          : 70px !default;
+$navigation-wrapper_width           : 100% !default;
+$navigation-wrapper_background-color: $color-white !default;
+
+$navigation-title_font-size  : 1.4em !default;
+$navigation-title_margin-left: 1em !default;
+
+$navigation-tabs_text-align: right !default;
+
+$navigation-item_margin-right: 2em !default;
+$navigation-item_padding     : 0.5em 1.7em !default;
+$navigation-item_display     : inline-block !default;
+
+$navigation-item-hover_background-color: #E7E7E7 !default;
+$navigation-item-hover_border-radius   : 20px !default;
+
+.navigation-wrapper {
+  height          : $navigation-wrapper_height;
+  width           : $navigation-wrapper_width;
+  background-color: $navigation-wrapper_background-color;
+  @include display-flex();
+  @include align-items(center);
+  > .navigation-title {
+    @include flex(0 100px);
+    font-size  : $navigation-title_font-size;
+    margin-left: $navigation-title_margin-left;
+  }
+  > .navigation-tabs {
+    @include flex(1 100%);
+    text-align: $navigation-tabs_text-align;
+    > .navigation-item {
+      margin-right: $navigation-item_margin-right;
+      padding     : $navigation-item_padding;
+      display     : $navigation-item_display;
+      &:hover {
+        background-color: $navigation-item-hover_background-color;
+        border-radius   : $navigation-item-hover_border-radius;
+      }
+    }
+  }
+}

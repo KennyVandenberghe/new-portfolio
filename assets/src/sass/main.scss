@@ -8,18 +8,22 @@
 //@import "mixins/overlay";
 //Rvn-lib
 //@import "components/mdl/actionPicker";
-//@import "components/overlay";
+@import "components/overlay";
 
 //app level
 //@import "components/list";
-//@import "components/buttons";
+@import "components/buttons";
 @import "components/login";
 //@import "components/layout-mask";
 
 //@import "components/pages/home";
 //@import "components/pages/session-list";
 
-//@import "components/mdl/card";
+@import "components/mdl/card";
+@import "components/navigation";
+@import "components/project";
+@import "components/imageBanner";
+@import "components/contact";
 
 html {
   font-size: 18px;
@@ -30,8 +34,9 @@ html {
 }
 
 body {
-  background-color: #F5F5F5;
-  color: $black;
+  background-color: $color-white;
+  color: $color-black;
+  font-family: 'Roboto';
 }
 a {
   text-decoration: none;
@@ -45,4 +50,15 @@ a {
 }
 .mdl-layout__header {
   z-index: 1;
+}
+
+.page-content {
+  margin-bottom: 200px;
+  > .page-container {
+    overflow-y: auto;
+    margin-top: 3em;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

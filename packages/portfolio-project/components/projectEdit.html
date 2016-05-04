@@ -1,0 +1,22 @@
+<template name="portfolioEditProject">
+  <div class="add-project-wrapper">
+    <form action="#">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" id="project-title" value="{{title}}">
+        <label class="mdl-textfield__label" for="project-title">Title...</label>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield">
+        <textarea class="mdl-textfield__input" type="text" rows= "3" id="project-description" value="{{description}}"></textarea>
+        <label class="mdl-textfield__label" for="project-description">Description...</label>
+      </div>
+    </form>
+    <div class="button-container">
+      <button class="edit-project mdl-button mdl-js-button mdl-button--raised">
+        Edit project
+      </button>
+      <button class="remove-project mdl-button mdl-js-button mdl-button--raised">
+        Remove project
+      </button>
+    </div>
+  </div>
+</template>

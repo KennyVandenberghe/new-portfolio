@@ -1,0 +1,18 @@
+<template name="portfolioProjectItem">
+  <div class="project-container">
+    {{#with data}}
+      <div class="project-title">
+        {{title}}
+      </div>
+      <div class="project-content">
+        <div class="project-image"></div>
+        <div class="project-text">
+          {{description}}
+        </div>
+        <button class="-bottom-right edit-project mdl-button mdl-js-button mdl-button--fab">
+          <i class="material-icons">edit</i>
+        </button>
+      </div>
+    {{/with}}
+  </div>
+</template>

@@ -1,0 +1,47 @@
+.project-container {
+  width: 100%;
+  min-height: 250px;
+  > .project-title {
+    @include display-flex();
+    @include align-items(center);
+    font-weight: 200;
+    color: $color-dark-gray;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    height: 50px;
+  }
+  > .project-content{
+    @include display-flex()
+    min-height: 200px;
+    background-color: $color-dark-blue;
+    position: relative;
+    > .project-image {
+      @include flex(0 450px);
+      background-color: gray;
+    }
+    > .project-text {
+      @include flex(1 100%);
+      color: $color-white;
+      padding: 1em;
+      font-size: 18px;
+      font-weight: 200;
+      line-height: 1.75;
+    }
+    > .edit-project {
+      min-width: 40px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.add-project-wrapper {
+  margin-top: 2em;
+  > form {
+    > .mdl-textfield {
+      width: 70%;
+      display: block;
+      margin: auto;
+    }
+  }
+}
